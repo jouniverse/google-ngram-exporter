@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <!-- Icon by:
+Treemap by Alexander Blagochevsky from <a href="https://thenounproject.com/browse/icons/term/treemap/" target="_blank" title="Treemap Icons">Noun Project</a> (CC BY 3.0) -->
+  <head>
+    <style>
+      body {
+        width: 200px;
+        padding: 10px;
+      }
+      title {
+        font-weight: bold;
+        font-size: 1.2em;
+        /* add rainbow gradient to the text red-yellow-green-blue */
+        background: linear-gradient(
+          to right,
+          #ea4335,
+          #fbbc04,
+          #34a853,
+          #4285f4
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        display: block;
+        margin: 5px 0;
+      }
+      button {
+        background-color: #3562bc;
+        color: white;
+        width: 100%;
+        padding: 8px;
+        margin: 5px 0;
+        border-radius: 30px;
+        border: 1px solid #eaf0fd;
+        outline: 1px solid #3562bc;
+        outline-offset: 2px;
+        transition: 0.2s ease-in-out;
+      }
+      button:hover {
+        background-color: #eaf0fd;
+        color: #3562bc;
+        border: 1px solid #3562bc;
+        outline: 1px solid #3562bc;
+        outline-offset: 2px;
+        /* font-weight: bold; */
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <title>Gooooogle Ngram Exporter</title>
+    <button id="exportBtn">Export to CSV</button>
+    <script src="popup.js"></script>
+  </body>
+</html>

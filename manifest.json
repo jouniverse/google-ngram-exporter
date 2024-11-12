@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Google Ngram CSV Exporter",
+  "version": "1.0",
+  "description": "Export Google Ngram Viewer data to CSV format",
+  "permissions": ["activeTab", "downloads"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "64": "icons/icon-64.png",
+      "128": "icons/icon-128.png",
+      "512": "icons/icon-512.png"
+    }
+  },
+  "icons": {
+    "64": "icons/icon-64.png",
+    "128": "icons/icon-128.png",
+    "512": "icons/icon-512.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://books.google.com/ngrams/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
