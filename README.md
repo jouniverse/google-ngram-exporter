@@ -2,7 +2,7 @@
 
 This Google Chrome extension will export the phrase frequency data from **Google Books Ngram Viewer**<sup>1</sup> as a CSV file.
 
-![Google Ngram Exporter](imgs/csv-exporter-image.png)
+![Google Ngram Exporter](imgs/csv-exporter-blue.png)
 
 ## Usage
 

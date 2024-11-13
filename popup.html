@@ -6,13 +6,14 @@ Treemap by Alexander Blagochevsky from <a href="https://thenounproject.com/brows
     <style>
       body {
         width: 200px;
-        padding: 10px;
+        padding: 20px;
+        border-radius: 20px;
       }
       title {
         font-weight: bold;
         font-size: 1.2em;
         /* add rainbow gradient to the text red-yellow-green-blue */
-        background: linear-gradient(
+        /* background: linear-gradient(
           to right,
           #ea4335,
           #fbbc04,
@@ -21,10 +22,12 @@ Treemap by Alexander Blagochevsky from <a href="https://thenounproject.com/brows
         );
         -webkit-background-clip: text;
         background-clip: text;
-        -webkit-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent; */
+        color: #3562bc;
         text-align: center;
         display: block;
         margin: 5px 0;
+        margin-bottom: 10px;
       }
       button {
         background-color: #3562bc;
@@ -44,13 +47,15 @@ Treemap by Alexander Blagochevsky from <a href="https://thenounproject.com/brows
         border: 1px solid #3562bc;
         outline: 1px solid #3562bc;
         outline-offset: 2px;
-        /* font-weight: bold; */
         cursor: pointer;
+        box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45),
+          5px 5px 9px rgba(94, 104, 121, 0.3);
       }
     </style>
   </head>
   <body>
-    <title>Gooooogle Ngram Exporter</title>
+    <!-- <title>Gooooogle Ngram Exporter</title> -->
+    <title>Ngram Exporter</title>
     <button id="exportBtn">Export to CSV</button>
     <script src="popup.js"></script>
   </body>
